@@ -1,0 +1,2 @@
+D:\Project-copy\flutter_stopwatch\build\windows\flutter\Debug\flutter_wrapper_plugin.pdb
+D:\Project-copy\flutter_stopwatch\build\windows\flutter\flutter_wrapper_plugin.dir\Debug\flutter_wrapper_plugin.pdb

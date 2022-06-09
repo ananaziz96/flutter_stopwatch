@@ -1,0 +1,10 @@
+^D:\PROJECT-COPY\FLUTTER_STOPWATCH\BUILD\WINDOWS\CMAKEFILES\2C8AA8DBD35E1F9F6E093B69A0F3FBFC\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

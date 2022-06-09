@@ -1,0 +1,28 @@
+^D:\PROJECT-COPY\FLUTTER_STOPWATCH\BUILD\WINDOWS\CMAKEFILES\645B791851E336B44F691F5E45C026FC\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=D:\flutter PROJECT_DIR=D:\Project-copy\flutter_stopwatch FLUTTER_ROOT=D:\flutter FLUTTER_EPHEMERAL_DIR=D:\Project-copy\flutter_stopwatch\windows\flutter\ephemeral PROJECT_DIR=D:\Project-copy\flutter_stopwatch FLUTTER_TARGET=D:\Project-copy\flutter_stopwatch\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\Project-copy\flutter_stopwatch\.dart_tool\package_config.json D:/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT-COPY\FLUTTER_STOPWATCH\BUILD\WINDOWS\CMAKEFILES\29B3DCEE76F71C3EC10E6292045D7EDF\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT-COPY\FLUTTER_STOPWATCH\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Project-copy/flutter_stopwatch/windows -BD:/Project-copy/flutter_stopwatch/build/windows --check-stamp-file D:/Project-copy/flutter_stopwatch/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
