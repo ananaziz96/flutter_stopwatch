@@ -4,5 +4,6 @@ D:/Project-copy/flutter_stopwatch/build/windows/runner/Debug/data/flutter_assets
 D:/Project-copy/flutter_stopwatch/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
 D:/Project-copy/flutter_stopwatch/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
 D:/Project-copy/flutter_stopwatch/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+D:/Project-copy/flutter_stopwatch/build/windows/runner/Debug/data/flutter_assets/NOTICES
 D:/Project-copy/flutter_stopwatch/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
 D:/Project-copy/flutter_stopwatch/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
