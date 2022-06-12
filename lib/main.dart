@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: HomeApp());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: HomeApp());
   }
 }
 
@@ -99,13 +99,15 @@ class _HomeAppState extends State<HomeApp> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Center(
-                      child: Text("StopWatch App",
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: Text("My Stopwatch",
                           style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 28.0,
-                            fontWeight: FontWeight.bold,
-                          )),
+                              color: Colors.white,
+                              fontSize: 28.0,
+                              fontWeight: FontWeight.bold,
+                              fontStyle: FontStyle.italic,
+                              fontFamily: 'cursive')),
                     ),
                     SizedBox(
                       height: 20.0,
@@ -117,6 +119,70 @@ class _HomeAppState extends State<HomeApp> {
                               fontSize: 82.0,
                               fontWeight: FontWeight.w600,
                             ))),
+                    SizedBox(
+                      height: 20.0,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Expanded(
+                            child: RawMaterialButton(
+                                onPressed: () {
+                                  start();
+                                  // (started) ? start() : stop();
+                                },
+                                shape: const StadiumBorder(
+                                  side: BorderSide(color: Colors.blue),
+                                ),
+                                child: Text(
+                                  "Start",
+                                  style: TextStyle(color: Colors.white),
+                                ))),
+                        SizedBox(
+                          width: 8.0,
+                        ),
+                        Expanded(
+                            child: RawMaterialButton(
+                                onPressed: () {
+                                  stop();
+                                },
+                                shape: const StadiumBorder(
+                                  side: BorderSide(color: Colors.blue),
+                                ),
+                                child: Text(
+                                  "Pause",
+                                  style: TextStyle(color: Colors.white),
+                                ))),
+                        SizedBox(
+                          width: 8.0,
+                        ),
+                        Expanded(
+                            child: RawMaterialButton(
+                                onPressed: () {
+                                  addLaps();
+                                },
+                                fillColor: Colors.blue,
+                                shape: const StadiumBorder(),
+                                child: Text(
+                                  "Lap",
+                                  style: TextStyle(color: Colors.white),
+                                ))),
+                        SizedBox(
+                          width: 8.0,
+                        ),
+                        Expanded(
+                            child: RawMaterialButton(
+                                onPressed: () {
+                                  reset();
+                                },
+                                fillColor: Colors.blue,
+                                shape: const StadiumBorder(),
+                                child: Text(
+                                  "Reset",
+                                  style: TextStyle(color: Colors.white),
+                                )))
+                      ],
+                    ),
                     Container(
                         height: 400.0,
                         decoration: BoxDecoration(
@@ -145,51 +211,6 @@ class _HomeAppState extends State<HomeApp> {
                                             ))
                                       ]));
                             })),
-                    SizedBox(
-                      height: 20.0,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Expanded(
-                            child: RawMaterialButton(
-                                onPressed: () {
-                                  start();
-                                  // (started) ? start() : stop();
-                                },
-                                shape: const StadiumBorder(
-                                  side: BorderSide(color: Colors.blue),
-                                ),
-                                child: Text(
-                                  (!started) ? "Start" : "Pause",
-                                  style: TextStyle(color: Colors.white),
-                                ))),
-                        SizedBox(
-                          width: 8.0,
-                        ),
-                        IconButton(
-                          color: Colors.white,
-                          onPressed: () {
-                            addLaps();
-                          },
-                          icon: Icon(Icons.flag),
-                        ),
-                        SizedBox(
-                          width: 8.0,
-                        ),
-                        Expanded(
-                            child: RawMaterialButton(
-                                onPressed: () {
-                                  reset();
-                                },
-                                fillColor: Colors.blue,
-                                shape: const StadiumBorder(),
-                                child: Text(
-                                  "Reset",
-                                  style: TextStyle(color: Colors.white),
-                                )))
-                      ],
-                    )
                   ],
                 ))));
   }
