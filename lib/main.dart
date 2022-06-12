@@ -101,13 +101,31 @@ class _HomeAppState extends State<HomeApp> {
                   children: [
                     Align(
                       alignment: Alignment.topLeft,
-                      child: Text("My Stopwatch",
-                          style: TextStyle(
-                              color: Colors.yellow,
-                              fontSize: 28.0,
-                              fontWeight: FontWeight.bold,
-                              fontStyle: FontStyle.italic,
-                              fontFamily: 'cursive')),
+                      child: RichText(
+                        text: TextSpan(
+                          children: [
+                            WidgetSpan(
+                              child: Icon(Icons.watch_later_outlined,
+                                  size: 30.0, color: Colors.yellow[600]),
+                            ),
+                            TextSpan(
+                                text: " Stopwatch",
+                                style: TextStyle(
+                                    color: Colors.yellow[600],
+                                    fontSize: 28.0,
+                                    fontWeight: FontWeight.bold,
+                                    fontStyle: FontStyle.italic,
+                                    fontFamily: 'cursive')),
+                          ],
+                        ),
+                      ),
+                      // Text("My Stopwatch",
+                      // style: TextStyle(
+                      //     color: Colors.yellow[600],
+                      //     fontSize: 28.0,
+                      //     fontWeight: FontWeight.bold,
+                      //     fontStyle: FontStyle.italic,
+                      //     fontFamily: 'cursive')),
                     ),
                     SizedBox(
                       height: 20.0,
@@ -115,7 +133,7 @@ class _HomeAppState extends State<HomeApp> {
                     Center(
                         child: Text("$digitHours:$digitMinutes:$digitSeconds",
                             style: TextStyle(
-                              color: Colors.yellow,
+                              color: Colors.yellow[600],
                               fontSize: 82.0,
                               fontWeight: FontWeight.w600,
                             ))),
@@ -136,7 +154,7 @@ class _HomeAppState extends State<HomeApp> {
                                 ),
                                 child: Text(
                                   "Start",
-                                  style: TextStyle(color: Colors.yellow),
+                                  style: TextStyle(color: Colors.yellow[600]),
                                 ))),
                         SizedBox(
                           width: 8.0,
@@ -151,7 +169,7 @@ class _HomeAppState extends State<HomeApp> {
                                 ),
                                 child: Text(
                                   "Pause",
-                                  style: TextStyle(color: Colors.yellow),
+                                  style: TextStyle(color: Colors.yellow[600]),
                                 ))),
                         SizedBox(
                           width: 8.0,
@@ -166,7 +184,7 @@ class _HomeAppState extends State<HomeApp> {
                                 ),
                                 child: Text(
                                   "Lap",
-                                  style: TextStyle(color: Colors.yellow),
+                                  style: TextStyle(color: Colors.yellow[600]),
                                 ))),
                         SizedBox(
                           width: 8.0,
@@ -181,7 +199,7 @@ class _HomeAppState extends State<HomeApp> {
                                 ),
                                 child: Text(
                                   "Reset",
-                                  style: TextStyle(color: Colors.yellow),
+                                  style: TextStyle(color: Colors.yellow[600]),
                                 )))
                       ],
                     ),
@@ -209,7 +227,7 @@ class _HomeAppState extends State<HomeApp> {
                                                 )),
                                             Text("${laps[index]}",
                                                 style: TextStyle(
-                                                  color: Colors.white,
+                                                  color: Colors.yellow,
                                                   fontSize: 16.0,
                                                 ))
                                           ]));
