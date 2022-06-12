@@ -91,10 +91,10 @@ class _HomeAppState extends State<HomeApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: const Color(0xFF1C2757),
+        backgroundColor: Color.fromARGB(255, 38, 38, 39),
         body: SafeArea(
             child: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(20.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -103,7 +103,7 @@ class _HomeAppState extends State<HomeApp> {
                       alignment: Alignment.topLeft,
                       child: Text("My Stopwatch",
                           style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.yellow,
                               fontSize: 28.0,
                               fontWeight: FontWeight.bold,
                               fontStyle: FontStyle.italic,
@@ -115,7 +115,7 @@ class _HomeAppState extends State<HomeApp> {
                     Center(
                         child: Text("$digitHours:$digitMinutes:$digitSeconds",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.yellow,
                               fontSize: 82.0,
                               fontWeight: FontWeight.w600,
                             ))),
@@ -132,11 +132,11 @@ class _HomeAppState extends State<HomeApp> {
                                   // (started) ? start() : stop();
                                 },
                                 shape: const StadiumBorder(
-                                  side: BorderSide(color: Colors.blue),
+                                  side: BorderSide(color: Colors.yellow),
                                 ),
                                 child: Text(
                                   "Start",
-                                  style: TextStyle(color: Colors.white),
+                                  style: TextStyle(color: Colors.yellow),
                                 ))),
                         SizedBox(
                           width: 8.0,
@@ -147,11 +147,11 @@ class _HomeAppState extends State<HomeApp> {
                                   stop();
                                 },
                                 shape: const StadiumBorder(
-                                  side: BorderSide(color: Colors.blue),
+                                  side: BorderSide(color: Colors.yellow),
                                 ),
                                 child: Text(
                                   "Pause",
-                                  style: TextStyle(color: Colors.white),
+                                  style: TextStyle(color: Colors.yellow),
                                 ))),
                         SizedBox(
                           width: 8.0,
@@ -161,11 +161,12 @@ class _HomeAppState extends State<HomeApp> {
                                 onPressed: () {
                                   addLaps();
                                 },
-                                fillColor: Colors.blue,
-                                shape: const StadiumBorder(),
+                                shape: const StadiumBorder(
+                                  side: BorderSide(color: Colors.yellow),
+                                ),
                                 child: Text(
                                   "Lap",
-                                  style: TextStyle(color: Colors.white),
+                                  style: TextStyle(color: Colors.yellow),
                                 ))),
                         SizedBox(
                           width: 8.0,
@@ -175,42 +176,44 @@ class _HomeAppState extends State<HomeApp> {
                                 onPressed: () {
                                   reset();
                                 },
-                                fillColor: Colors.blue,
-                                shape: const StadiumBorder(),
+                                shape: const StadiumBorder(
+                                  side: BorderSide(color: Colors.yellow),
+                                ),
                                 child: Text(
                                   "Reset",
-                                  style: TextStyle(color: Colors.white),
+                                  style: TextStyle(color: Colors.yellow),
                                 )))
                       ],
                     ),
-                    Container(
-                        height: 400.0,
-                        decoration: BoxDecoration(
-                          color: Color(0xFF323F68),
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        //list builder
-                        child: ListView.builder(
-                            itemCount: laps.length,
-                            itemBuilder: (context, index) {
-                              return Padding(
-                                  padding: const EdgeInsets.all(16.0),
-                                  child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Text("Lap n ${index + 1}",
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                              fontSize: 16.0,
-                                            )),
-                                        Text("${laps[index]}",
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                              fontSize: 16.0,
-                                            ))
-                                      ]));
-                            })),
+                    SingleChildScrollView(
+                        child: Container(
+                            height: 400.0,
+                            decoration: BoxDecoration(
+                              color: Color.fromARGB(255, 65, 65, 65),
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            //list builder
+                            child: ListView.builder(
+                                itemCount: laps.length,
+                                itemBuilder: (context, index) {
+                                  return Padding(
+                                      padding: const EdgeInsets.all(20.0),
+                                      child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Text("Lap ${index + 1}",
+                                                style: TextStyle(
+                                                  color: Colors.yellow,
+                                                  fontSize: 16.0,
+                                                )),
+                                            Text("${laps[index]}",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 16.0,
+                                                ))
+                                          ]));
+                                }))),
                   ],
                 ))));
   }
