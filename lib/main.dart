@@ -2,8 +2,18 @@ import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter_stopwatch/stopwatch_data.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
-void main() {
+late Box box;
+void main() async {
+  await Hive.initFlutter();
+  box = await Hive.openBox('box');
+  Hive.registerAdapter(StopwatchDataAdapter());
+  box.put(
+      'stopwatchData', StopwatchData(time: "00:00:07", laps: "Lap 1 00:00:04"));
+
   runApp(const MyApp());
 }
 
@@ -25,6 +35,8 @@ class HomeApp extends StatefulWidget {
 }
 
 class _HomeAppState extends State<HomeApp> {
+  StopwatchData db = box.get('stopwatchData');
+
   bool isRunning = false;
   int secs = 0, mins = 0, hrs = 0;
   String dispSeconds = "00", dispMinutes = "00", dispHours = "00";
@@ -234,18 +246,52 @@ class _HomeAppState extends State<HomeApp> {
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceBetween,
                                           children: [
-                                            Text("Lap ${index + 1}",
+                                            Text("Time saved: ${db.time}",
                                                 style: TextStyle(
                                                   color: Colors.yellow,
                                                   fontSize: 16.0,
                                                 )),
-                                            Text("${laps[index]}",
+                                            Text("Laps saved: ${db.laps}",
                                                 style: TextStyle(
                                                   color: Colors.yellow,
                                                   fontSize: 16.0,
                                                 ))
                                           ]));
                                 }))),
+                    Text(
+                      "Show saved data from previous session",
+                      style: TextStyle(color: Colors.yellow[600]),
+                    ),
+                    Container(
+                        //max width and height for mobile/web
+                        height: 300.0,
+                        width: 600.0,
+                        decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 65, 65, 65),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                        //list builder
+                        child: ListView.builder(
+                            itemCount: laps.length,
+                            itemBuilder: (context, index) {
+                              return Padding(
+                                  padding: const EdgeInsets.all(20.0),
+                                  child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text("Lap ${index + 1}",
+                                            style: TextStyle(
+                                              color: Colors.yellow,
+                                              fontSize: 16.0,
+                                            )),
+                                        Text("${laps[index]}",
+                                            style: TextStyle(
+                                              color: Colors.yellow,
+                                              fontSize: 16.0,
+                                            ))
+                                      ]));
+                            }))
                   ],
                 ))));
   }
