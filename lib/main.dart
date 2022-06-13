@@ -119,13 +119,6 @@ class _HomeAppState extends State<HomeApp> {
                           ],
                         ),
                       ),
-                      // Text("My Stopwatch",
-                      // style: TextStyle(
-                      //     color: Colors.yellow[600],
-                      //     fontSize: 28.0,
-                      //     fontWeight: FontWeight.bold,
-                      //     fontStyle: FontStyle.italic,
-                      //     fontFamily: 'cursive')),
                     ),
                     SizedBox(
                       height: 20.0,
@@ -149,7 +142,8 @@ class _HomeAppState extends State<HomeApp> {
                                   start();
                                   // (started) ? start() : stop();
                                 },
-                                shape: const StadiumBorder(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(5.0),
                                   side: BorderSide(color: Colors.yellow),
                                 ),
                                 child: Text(
@@ -164,7 +158,8 @@ class _HomeAppState extends State<HomeApp> {
                                 onPressed: () {
                                   stop();
                                 },
-                                shape: const StadiumBorder(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(5.0),
                                   side: BorderSide(color: Colors.yellow),
                                 ),
                                 child: Text(
@@ -179,7 +174,8 @@ class _HomeAppState extends State<HomeApp> {
                                 onPressed: () {
                                   addLaps();
                                 },
-                                shape: const StadiumBorder(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(5.0),
                                   side: BorderSide(color: Colors.yellow),
                                 ),
                                 child: Text(
@@ -194,7 +190,8 @@ class _HomeAppState extends State<HomeApp> {
                                 onPressed: () {
                                   reset();
                                 },
-                                shape: const StadiumBorder(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(5.0),
                                   side: BorderSide(color: Colors.yellow),
                                 ),
                                 child: Text(
@@ -205,7 +202,9 @@ class _HomeAppState extends State<HomeApp> {
                     ),
                     SingleChildScrollView(
                         child: Container(
-                            height: 400.0,
+                            //max width and height for mobile/web
+                            height: 300.0,
+                            width: 600.0,
                             decoration: BoxDecoration(
                               color: Color.fromARGB(255, 65, 65, 65),
                               borderRadius: BorderRadius.circular(8.0),

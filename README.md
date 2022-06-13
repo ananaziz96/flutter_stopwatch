@@ -1,16 +1,18 @@
-# flutter_stopwatch
+# Stopwatch App
 
-A new Flutter project.
+Here is a simple Stopwatch App that I built using Flutter.
+My UI is inspired by [Rahmat Raditya](https://dribbble.com/shots/11164774-Clock-Apps-Design-Exploration)
 
-## Getting Started
+## How to run the app
 
-This project is a starting point for a Flutter application.
+Step 1: Install Flutter on your machine
+Step 2: Clone the repo
+Step 3: From your VS code terminal run the following
 
-A few resources to get you started if this is your first Flutter project:
+```
+flutter run
+````
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Step 4: Next pick a device to emulate the app (You can also install Android Studio and emulate your app on Android devices such as Pixel 4)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+

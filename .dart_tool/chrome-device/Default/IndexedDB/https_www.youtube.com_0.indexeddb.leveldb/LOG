@@ -1,2 +1,34 @@
-2022/06/11-08:34:41.283 4424 Creating DB C:\Users\anana\AppData\Local\Temp\flutter_tools.baa1e73e\flutter_tools_chrome_device.e287b70a\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb since it was missing.
-2022/06/11-08:34:41.291 4424 Reusing MANIFEST C:\Users\anana\AppData\Local\Temp\flutter_tools.baa1e73e\flutter_tools_chrome_device.e287b70a\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/06/12-17:43:04.581 2a98 Reusing MANIFEST C:\Users\anana\AppData\Local\Temp\flutter_tools.ed7f301b\flutter_tools_chrome_device.252e3ba5\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/06/12-17:43:04.581 2a98 Recovering log #3
+2022/06/12-17:43:04.585 2a98 Reusing old log C:\Users\anana\AppData\Local\Temp\flutter_tools.ed7f301b\flutter_tools_chrome_device.252e3ba5\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/000003.log 
+2022/06/12-17:43:07.695 4c2c Level-0 table #5: started
+2022/06/12-17:43:07.701 4c2c Level-0 table #5: 246075 bytes OK
+2022/06/12-17:43:07.702 4c2c Delete type=0 #3
+2022/06/12-17:43:07.703 4c2c Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
+2022/06/12-17:43:08.402 5a18 Level-0 table #7: started
+2022/06/12-17:43:08.404 5a18 Level-0 table #7: 5533 bytes OK
+2022/06/12-17:43:08.407 5a18 Delete type=0 #4
+2022/06/12-17:43:08.407 5a18 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
+2022/06/12-17:43:08.407 5a18 Manual compaction at level-1 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0a\x00\x00\xc8\x11\x00L\x00o\x00g\x00s\x00R\x00e\x00q\x00u\x00e\x00s\x00t\x00s\x00S\x00t\x00o\x00r\x00e' @ 2593 : 1
+2022/06/12-17:43:08.407 5a18 Compacting 1@1 + 1@2 files
+2022/06/12-17:43:08.415 5a18 Generated table #8@1: 282 keys, 13050 bytes
+2022/06/12-17:43:08.415 5a18 Compacted 1@1 + 1@2 files => 13050 bytes
+2022/06/12-17:43:08.416 5a18 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/06/12-17:43:08.416 5a18 Delete type=2 #7
+2022/06/12-17:43:08.417 5a18 Manual compaction at level-1 from '\x00\x0a\x00\x00\xc8\x11\x00L\x00o\x00g\x00s\x00R\x00e\x00q\x00u\x00e\x00s\x00t\x00s\x00S\x00t\x00o\x00r\x00e' @ 2593 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
+2022/06/12-17:43:08.684 27a8 Manual compaction at level-0 from '\x00\x08\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at (end)
+2022/06/12-17:43:08.684 27a8 Manual compaction at level-1 from '\x00\x08\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at (end)
+2022/06/12-17:43:08.697 27a8 Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)
+2022/06/12-17:43:08.697 27a8 Manual compaction at level-1 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)
+2022/06/12-17:43:08.738 27a8 Level-0 table #10: started
+2022/06/12-17:43:08.740 27a8 Level-0 table #10: 35611 bytes OK
+2022/06/12-17:43:08.742 27a8 Delete type=2 #5
+2022/06/12-17:43:08.743 27a8 Delete type=0 #6
+2022/06/12-17:43:08.743 27a8 Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)
+2022/06/12-17:43:08.743 27a8 Manual compaction at level-1 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0d\x00\x00\xc8\x05\x00m\x00e\x00d\x00i\x00a' @ 3461 : 1
+2022/06/12-17:43:08.743 27a8 Compacting 1@1 + 1@2 files
+2022/06/12-17:43:08.746 27a8 Generated table #11@1: 271 keys, 18020 bytes
+2022/06/12-17:43:08.746 27a8 Compacted 1@1 + 1@2 files => 18020 bytes
+2022/06/12-17:43:08.748 27a8 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/06/12-17:43:08.748 27a8 Delete type=2 #10
+2022/06/12-17:43:08.748 27a8 Manual compaction at level-1 from '\x00\x0d\x00\x00\xc8\x05\x00m\x00e\x00d\x00i\x00a' @ 3461 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)
