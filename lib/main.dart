@@ -197,6 +197,13 @@ class _HomeAppState extends State<HomeApp> {
                             ))
                       ],
                     ),
+                    SizedBox(
+                      width: 8.0,
+                    ),
+                    Text(
+                      "Your Laps",
+                      style: TextStyle(color: Colors.yellow[600]),
+                    ),
                     SingleChildScrollView(
                         child: Container(
                             //max width and height for mobile/web
