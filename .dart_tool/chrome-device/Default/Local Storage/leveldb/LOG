@@ -1,15 +1,4 @@
-2022/06/12-17:02:34.405 3e48 Reusing MANIFEST C:\Users\anana\AppData\Local\Temp\flutter_tools.ed7f301b\flutter_tools_chrome_device.252e3ba5\Default\Local Storage\leveldb/MANIFEST-000001
-2022/06/12-17:02:34.406 3e48 Recovering log #3
-2022/06/12-17:02:34.407 3e48 Reusing old log C:\Users\anana\AppData\Local\Temp\flutter_tools.ed7f301b\flutter_tools_chrome_device.252e3ba5\Default\Local Storage\leveldb/000003.log 
-2022/06/12-17:10:13.784 4d54 Level-0 table #5: started
-2022/06/12-17:10:13.792 4d54 Level-0 table #5: 58770 bytes OK
-2022/06/12-17:10:13.795 4d54 Delete type=0 #3
-2022/06/12-17:11:09.591 3e48 Level-0 table #7: started
-2022/06/12-17:11:09.599 3e48 Level-0 table #7: 41526 bytes OK
-2022/06/12-17:11:09.603 3e48 Delete type=0 #4
-2022/06/12-17:30:20.207 47d4 Level-0 table #9: started
-2022/06/12-17:30:20.221 47d4 Level-0 table #9: 42766 bytes OK
-2022/06/12-17:30:20.226 47d4 Delete type=0 #6
-2022/06/12-18:26:04.177 5720 Level-0 table #11: started
-2022/06/12-18:26:04.184 5720 Level-0 table #11: 27636 bytes OK
-2022/06/12-18:26:04.186 5720 Delete type=0 #8
+2022/06/13-04:17:26.230 4520 Reusing MANIFEST C:\Users\anana\AppData\Local\Temp\flutter_tools.4849caa8\flutter_tools_chrome_device.5ceb69f1\Default\Local Storage\leveldb/MANIFEST-000001
+2022/06/13-04:17:26.231 4520 Recovering log #10
+2022/06/13-04:17:26.232 4520 Reusing old log C:\Users\anana\AppData\Local\Temp\flutter_tools.4849caa8\flutter_tools_chrome_device.5ceb69f1\Default\Local Storage\leveldb/000010.log 
+2022/06/13-04:17:26.232 4520 Delete type=0 #3

@@ -25,6 +25,7 @@ class HomeApp extends StatefulWidget {
 }
 
 class _HomeAppState extends State<HomeApp> {
+  bool isRunning = false;
   int seconds = 0, minutes = 0, hours = 0;
   String digitSeconds = "00", digitMinutes = "00", digitHours = "00";
   Timer? timer;
@@ -139,8 +140,12 @@ class _HomeAppState extends State<HomeApp> {
                       children: [
                         RawMaterialButton(
                             onPressed: () {
-                              start();
-                              // (started) ? start() : stop();
+                              if (!isRunning) {
+                                start();
+                              } else {
+                                //disable start button
+                              }
+                              isRunning = true;
                             },
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5.0),
@@ -155,7 +160,12 @@ class _HomeAppState extends State<HomeApp> {
                         ),
                         RawMaterialButton(
                             onPressed: () {
-                              stop();
+                              if (isRunning) {
+                                stop();
+                              } else {
+                                //disable stop button
+                              }
+                              isRunning = false;
                             },
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5.0),
