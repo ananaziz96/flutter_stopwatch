@@ -13,6 +13,14 @@ My UI is inspired by [Rahmat Raditya](https://dribbble.com/shots/11164774-Clock-
 flutter run
 ````
 
-**Step 4:** Next pick a device to emulate the app (You can also install Android Studio and emulate your app on Android devices such as Pixel 4)
+**Step 4:** Next pick a device to emulate the app (You can also install Android Studio and emulate your app on Android devices such as Pixel 4) \
+
+## App UI
+
+![alt text](https://ibb.co/QvNHyVR)
+
+## Demo video
+
+Here is a live [demo](https://youtube.com/shorts/XUhaYpcWZao?feature=share) of the Stopwatch app.
 
 
