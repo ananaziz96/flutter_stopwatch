@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 
@@ -134,70 +135,66 @@ class _HomeAppState extends State<HomeApp> {
                       height: 20.0,
                     ),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Expanded(
-                            child: RawMaterialButton(
-                                onPressed: () {
-                                  start();
-                                  // (started) ? start() : stop();
-                                },
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(5.0),
-                                  side: BorderSide(color: Colors.yellow),
-                                ),
-                                child: Text(
-                                  "Start",
-                                  style: TextStyle(color: Colors.yellow[600]),
-                                ))),
+                        RawMaterialButton(
+                            onPressed: () {
+                              start();
+                              // (started) ? start() : stop();
+                            },
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5.0),
+                              side: BorderSide(color: Colors.yellow),
+                            ),
+                            child: Text(
+                              "Start",
+                              style: TextStyle(color: Colors.yellow[600]),
+                            )),
                         SizedBox(
                           width: 8.0,
                         ),
-                        Expanded(
-                            child: RawMaterialButton(
-                                onPressed: () {
-                                  stop();
-                                },
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(5.0),
-                                  side: BorderSide(color: Colors.yellow),
-                                ),
-                                child: Text(
-                                  "Pause",
-                                  style: TextStyle(color: Colors.yellow[600]),
-                                ))),
+                        RawMaterialButton(
+                            onPressed: () {
+                              stop();
+                            },
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5.0),
+                              side: BorderSide(color: Colors.yellow),
+                            ),
+                            child: Text(
+                              "Stop",
+                              style: TextStyle(color: Colors.yellow[600]),
+                            )),
                         SizedBox(
                           width: 8.0,
                         ),
-                        Expanded(
-                            child: RawMaterialButton(
-                                onPressed: () {
-                                  addLaps();
-                                },
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(5.0),
-                                  side: BorderSide(color: Colors.yellow),
-                                ),
-                                child: Text(
-                                  "Lap",
-                                  style: TextStyle(color: Colors.yellow[600]),
-                                ))),
+                        RawMaterialButton(
+                            onPressed: () {
+                              addLaps();
+                            },
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5.0),
+                              side: BorderSide(color: Colors.yellow),
+                            ),
+                            child: Text(
+                              "Lap",
+                              style: TextStyle(color: Colors.yellow[600]),
+                            )),
                         SizedBox(
                           width: 8.0,
                         ),
-                        Expanded(
-                            child: RawMaterialButton(
-                                onPressed: () {
-                                  reset();
-                                },
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(5.0),
-                                  side: BorderSide(color: Colors.yellow),
-                                ),
-                                child: Text(
-                                  "Reset",
-                                  style: TextStyle(color: Colors.yellow[600]),
-                                )))
+                        RawMaterialButton(
+                            onPressed: () {
+                              reset();
+                            },
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5.0),
+                              side: BorderSide(color: Colors.yellow),
+                            ),
+                            child: Text(
+                              "Reset",
+                              style: TextStyle(color: Colors.yellow[600]),
+                            ))
                       ],
                     ),
                     SingleChildScrollView(
